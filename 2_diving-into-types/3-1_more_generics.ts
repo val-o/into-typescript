@@ -48,5 +48,10 @@ function getValues<TObj extends object, TKey extends keyof TObj> (obj: TObj, ...
 const ovcharkaValues = getValues(ovcharkaHouse.getDog(), 'age', 'sit');
 
 
+function firstArgString<Tfn extends (a: string, ...args: any[]) => any>(arg: Tfn): void {
+
+}
+
+firstArgString((a: string, b: number) => 'asdf');
 
 export {};

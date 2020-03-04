@@ -1,3 +1,6 @@
+/**
+ * what's wrong here?
+ */
 export const upperCase = (str) => {
   return str.toUpperCase();
 }
@@ -6,8 +9,10 @@ export const upperCase = (str) => {
  * Alternatives to any
  */
 
-// object type
- Object.keys
+// broad types
+const obj: object = {a: 3, b: 4};
+const fn: Function = (a,b,c) => 4;
+
 
 // partially typed interface
 interface IDbRecord {
@@ -19,13 +24,4 @@ const a: IDbRecord = {
   id: 323,
   anyOtheProps: 'test',
 }
-
-export interface IDog {
-  name: string;
-}
-
-const dog: IDog = {
-  name: 'Soso'
-}
-const t = dog['unknown-prop'];
 
