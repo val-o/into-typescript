@@ -1,4 +1,4 @@
-import React = require("react");
+import React = require("./react");
 
 interface IListPropsBase {
   count: number;
@@ -15,7 +15,7 @@ interface ISortableList extends IListPropsBase {
 
 type IProps = IPlainList | ISortableList;
 
-export const List = (
+const List = (
   props: React.PropsWithChildren<IProps>
 ): React.ReactElement => {
   return (
@@ -31,5 +31,7 @@ const sortableListEl = (
 );
 
 const plainListEl = <List count={10}></List>;
+
+export {}
 
 
