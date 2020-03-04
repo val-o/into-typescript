@@ -1,3 +1,8 @@
+/**
+ * Mapped types is used when you need to transform existing type
+ */
+
+
 interface Dog {
   readonly id: string;
   name?: string;
@@ -18,21 +23,12 @@ export const dog: Dog = {
   }
 }
 
+/**
+ * Usefull built-ins
+ */
 type ReadonlyDog = Readonly<Dog>;
 type OptionalDog = Partial<Dog>;
 type RequiredDog = Required<Dog>;
-
-
-type NonReadonly<T> = {
-  -readonly [K in keyof T]: T[K]
-}
-type NonReadonlyDog = NonReadonly<Dog>;
-
-type OnlyFunctions<T extends object> = {
-  [K in keyof T]: T[K] extends Function ? K : never;
-}[keyof T];
-type OnlyFunctionsDog = OnlyFunctions<Dog>;
-
 
 
 enum ERole {
@@ -45,3 +41,5 @@ const ROLE_ICON_MAP: Record<ERole, string> = {
   [ERole.SuperAdmin]: 'super_admin_icon.svg',
   [ERole.User]: 'user_icon.svg',
 }
+
+
