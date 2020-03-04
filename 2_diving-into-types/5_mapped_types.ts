@@ -31,6 +31,11 @@ type OptionalDog = Partial<Dog>;
 type RequiredDog = Required<Dog>;
 
 
+
+/**
+ * Use Case
+ */
+
 enum ERole {
   User,
   Admin,

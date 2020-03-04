@@ -3,7 +3,7 @@
   "compilerOptions": {
     "module": "UMD",
     "strictPropertyInitialization": false,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "suppressImplicitAnyIndexErrors": true,
   }
 }
