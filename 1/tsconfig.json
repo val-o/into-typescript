@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "useDefineForClassFields": true,
+    "target": "ES6",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    // "importsNotUsedAsValues": "remove",
+    "outDir": "./build",
+    "lib": ["ES2015", "DOM", "DOM.Iterable"]
+  }
+}

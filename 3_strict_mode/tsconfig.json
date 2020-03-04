@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "UMD",
+    "strictPropertyInitialization": false,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+  }
+}

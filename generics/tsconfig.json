@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "UMD",
+    "lib": ["ESNext"],
+    "strictPropertyInitialization": false,
+    "noImplicitAny": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "suppressImplicitAnyIndexErrors": true,
+  }
+}
