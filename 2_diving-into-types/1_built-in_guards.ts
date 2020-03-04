@@ -1,3 +1,8 @@
+/**
+ * What is guard? 
+ * function or operator helping narrow(infer) the type of variable
+ */
+
 export function print(object: unknown): void {
   if (typeof object === "string") {
     console.log(object.toUpperCase());
