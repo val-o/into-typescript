@@ -5,6 +5,7 @@
 class Dog {
   public name: string;
   public age: number;
+  public injected!: string;
 }
 
 export {}
