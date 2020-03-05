@@ -27,9 +27,14 @@ listOfDogs.add(dog);
 const realDog = listOfDogs.get(0);
 console.log(realDog.nonExistingProp);
 
-
 interface Dog {
   name: string;
 }
 
-export {}
+/**
+ * Typescript will infer generics as much as it can
+ */
+const getObject = <TObj extends object>(obj: TObj) => obj;
+const obj = getObject({ s: 3 });
+
+export {};

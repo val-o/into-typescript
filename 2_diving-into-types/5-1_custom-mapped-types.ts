@@ -1,5 +1,6 @@
 /**
  * Custom mapped types
+ *  From handbook
  */
 
 type NonReadonly<T> = {
@@ -13,9 +14,6 @@ type OnlyFunctions<T extends object> = {
 type OnlyFunctionsDog = OnlyFunctions<Dog>;
 
 
-/**
- * From handbook
- */
 type Proxy<T> = {
   get(): T;
   set(value: T): void;
