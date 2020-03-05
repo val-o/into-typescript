@@ -59,3 +59,9 @@ enum ERole {
 const role = ERole.Admin;
 type RoleKey = keyof ERole;
 
+type SS = {
+  [TKey in keyof ERole]: string
+}
+type SS2 = Record<ERole, string>;
+
+export {}

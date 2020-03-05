@@ -8,19 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-exports.__esModule = true;
-var Inject_1 = require("./Inject");
-var Provider = (function () {
-    function Provider() {
+Object.defineProperty(exports, "__esModule", { value: true });
+const Inject_1 = require("./Inject");
+class AuthStore {
+    auth() {
     }
-    return Provider;
-}());
-var Store = (function () {
-    function Store() {
+}
+class AuthFormComponent {
+    handleSubmit() {
+        this.provider.auth();
     }
-    __decorate([
-        Inject_1.Inject,
-        __metadata("design:type", Provider)
-    ], Store.prototype, "provider");
-    return Store;
-}());
+}
+__decorate([
+    Inject_1.Inject,
+    __metadata("design:type", AuthStore)
+], AuthFormComponent.prototype, "provider", void 0);

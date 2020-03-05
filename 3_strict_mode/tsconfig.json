@@ -5,6 +5,6 @@
     "strictPropertyInitialization": false,
     "noImplicitAny": false,
     "strictNullChecks": false,
-    "suppressImplicitAnyIndexErrors": true,
+    "suppressImplicitAnyIndexErrors": true
   }
 }

@@ -12,6 +12,15 @@ class User extends Model<string> {
   constructor(public username: string, id: string) {
     super(id);
   }
+
+  private doWorkInternal() {
+
+  }
+
+  public doWork() {
+    this.doWorkInternal();
+  }
+
   public getDisplayName() {
     return super.toString() + '_' + this.username;
   }
