@@ -32,3 +32,5 @@ function test(predicate: Predicate, object: object): boolean {
   // finally only 1 type is available.
   return predicate.test(object);
 }
+
+export {}
