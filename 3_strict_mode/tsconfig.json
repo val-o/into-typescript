@@ -4,6 +4,7 @@
     "module": "UMD",
     "strictPropertyInitialization": false,
     "noImplicitAny": false,
+    "strictNullChecks": false,
     "suppressImplicitAnyIndexErrors": true,
   }
 }

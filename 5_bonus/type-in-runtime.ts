@@ -1,10 +1,16 @@
 import { Inject } from "./Inject";
 
-class Provider {
+class AuthStore {
+  public auth() {
 
+  }
 }
 
-class Store {
-  @Inject public provider!: Provider;
+class AuthFormComponent {
+  @Inject public provider!: AuthStore;
+
+  private handleSubmit() {
+    this.provider.auth();
+  }
 
 }
